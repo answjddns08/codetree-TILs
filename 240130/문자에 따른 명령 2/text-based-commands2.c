@@ -1,9 +1,10 @@
 #include <stdio.h>
+#include <string.h>
 
 int main(void)
 {
-    int dir = 0,x = 0,y = 0;
-    char input;
+    int dir = 0,x = 0,y = 0,len;
+    char input[100000];
 
     /**dir이
      * 0이면 북
@@ -13,11 +14,13 @@ int main(void)
      * 4면 다시 북으로(0으로 초기화)
     */
 
-    do
-    {
-        scanf("%c",&input);
+    scanf("%s",&input);
 
-        switch (input)
+    len = strlen(input);
+
+    for (int i = 0;i < len;i++)
+    {
+        switch (input[i])
         {
         case 'L':
             dir = dir == 0 ? 3 : dir - 1;
@@ -45,9 +48,7 @@ int main(void)
             }
             break;
         }
-
-    } while (input >= 65 && input <= 90);
-    
+    }
     printf("%d %d",x,y);
 
     return 0;
