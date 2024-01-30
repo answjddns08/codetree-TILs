@@ -18,45 +18,55 @@ int main(void)
 
     for (int i = 0;i < t;i++)
     {
-        if (r == n)
+        
+        switch (dir)
         {
-            dir = 'L';
-        }
-        else if (r == 0)
-        {
-            dir = 'R';
-        }
-        else if (c == n)
-        {
-            dir = 'U';
-        }
-        else if (c == 0)
-        {
-            dir = 'D';
-        }
-        else
-        {
-            switch (dir)
+        case 'U':
+            if (r == 1)
             {
-            case 'U':
-                c++;
-                break;
-            case 'D':
-                c--;
-                break;
-            case 'R':
-                r++;
-                break;
-            case 'L':
-                r--;
-                break;
-            default:
-                break;
+                dir = 'D';
             }
+            else 
+            {
+                r++;
+            }
+            break;
+        case 'D':
+            if (r == n)
+            {
+                dir = 'U';
+            }
+            else 
+            {
+                r--;
+            }
+            break;
+        case 'R':
+        if (c == n)
+            {
+                dir = 'L';
+            }
+            else 
+            {
+                c++;
+            }
+            break;
+        case 'L':
+            if (c == 1)
+            {
+                dir = 'R';
+            }
+            else 
+            {
+                c--;
+            }
+            break;
+        default:
+            break;
         }
     }
 
-    printf("%d %d",r + 1,c + 1);
+    printf("%d %d",r,c);
 
     return 0;
 }
