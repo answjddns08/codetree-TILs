@@ -18,7 +18,6 @@ int main(void)
 
     for (int i = 0;i < t;i++)
     {
-        
         switch (dir)
         {
         case 'U':
@@ -28,7 +27,7 @@ int main(void)
             }
             else 
             {
-                r++;
+                r--;
             }
             break;
         case 'D':
@@ -38,7 +37,7 @@ int main(void)
             }
             else 
             {
-                r--;
+                r++;
             }
             break;
         case 'R':
