@@ -14,10 +14,14 @@ int main(void)
     int x = 0,y = 0;
     int cnt = 0;
 
-    scanf("%d %c %d",&n,&dir,&dis);
+    scanf("%d\n",&n);
 
     for (int i = 0;i < n;i++)
     {
+        scanf("%c %d\n",&dir,&dis);
+
+        //printf("%c %d\n",dir,dis);
+
         switch (dir)
         {
         case 'N':
@@ -70,7 +74,6 @@ int main(void)
             break;
         }
         
-        scanf("%c %d ",&dir,&dis);
     }
 
     cnt = -1;
