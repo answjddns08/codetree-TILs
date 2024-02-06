@@ -23,8 +23,6 @@ int main(void)
         map[r][c] = 1;//true랑 같음
 
         printf("%d\n",checking(r,c,n,map));
-
-        
     }
 
     return 0;
@@ -34,7 +32,7 @@ _Bool checking(int r,int c,int n,_Bool map[100][100])
 {
     int cnt;
 
-    if (r + 1 <= n && map[r + 1][c])
+    if (r + 1 < n && map[r + 1][c])
     {
         cnt++;
     }
@@ -44,7 +42,7 @@ _Bool checking(int r,int c,int n,_Bool map[100][100])
         cnt++;
     }
 
-    if (c + 1 <= n && map[r][c + 1])
+    if (c + 1 < n && map[r][c + 1])
     {
         cnt++;
     }
