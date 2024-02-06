@@ -1,38 +1,11 @@
 #include <stdio.h>
 #include <stdbool.h>
 
-_Bool checking(int r,int c,int n,_Bool map[100][100]);
-
-int main(void)
-{
-    int n,m;
-    _Bool map[100][100] = { 0, };
-    int r,c;
-
-    scanf("%d %d",&n,&m);
-
-    for (int i = 0;i < m;i++)
-    {
-        scanf("%d %d",&r,&c);
-
-        //printf("intput: %d %d\n",r,c);
-
-        r--;
-        c--;
-
-        map[r][c] = 1;//true랑 같음
-
-        printf("%d\n",checking(r,c,n,map));
-    }
-
-    return 0;
-}
-
 _Bool checking(int r,int c,int n,_Bool map[100][100])
 {
-    int cnt;
+    int cnt = 0;
 
-    if (r + 1 <= n && map[r + 1][c])
+    if (r + 1 < n && map[r + 1][c])
     {
         cnt++;
     }
@@ -42,7 +15,7 @@ _Bool checking(int r,int c,int n,_Bool map[100][100])
         cnt++;
     }
 
-    if (c + 1 <= n && map[r][c + 1])
+    if (c + 1 < n && map[r][c + 1])
     {
         cnt++;
     }
@@ -62,4 +35,29 @@ _Bool checking(int r,int c,int n,_Bool map[100][100])
     {
         return 0;
     }
+}
+
+int main(void)
+{
+    int n,m;
+    _Bool map[100][100] = { 0, };//0 ~ 99
+    int r,c;
+
+    scanf("%d %d",&n,&m);
+
+    for (int i = 0;i < m;i++)
+    {
+        scanf("%d %d",&r,&c);
+
+        //printf("intput: %d %d\n",r,c);
+
+        r--;
+        c--;
+
+        map[r][c] = 1;//true랑 같음
+
+        printf("%d\n",checking(r,c,n,map));
+    }
+
+    return 0;
 }
