@@ -47,11 +47,25 @@ int main(void)
     {
         if (map[y][x] == '/')//회전
         {
-            dir = dir == 0 ? 3 : dir - 1;
+            if (dir == 1 || dir == 0)
+            {
+                dir = dir == 1 ? 0 : 1;
+            }
+            else
+            {
+                dir = dir == 2 ? 3 : 2;
+            }
         }
         else// ||역슬레시인 경우
         {
-            dir = (dir + 1) % 4;
+            if (dir == 3 || dir == 0)
+            {
+                dir = dir == 3 ? 0 : 3;
+            }
+            else
+            {
+                dir = dir == 2 ? 1 : 2;
+            }
         }
 
         //printf("bounce!\n");
