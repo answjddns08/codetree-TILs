@@ -35,7 +35,7 @@ int main(void)
             }
             break;
         case 1:
-            if (x + 1 < n && map[y][x + 1] == 0)
+            if (x + 1 < m && map[y][x + 1] == 0)
             {
                 x++;
             }
