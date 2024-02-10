@@ -15,10 +15,13 @@ int main(void)
 
     scanf("%d %d",&n,&m);
 
-    for (int i = 0;i < n * m;i++)
-    {        
-        map[y][x] = 65 + i;
+    int temp = 0;
 
+    for (int i = 0;i < n * m;i++)
+    {
+        map[y][x] = temp + 65;
+        
+        temp = temp > 25 ? 0 : temp + 1;
         //printf("%d %d\n",y,x);
 
         switch (dir)
