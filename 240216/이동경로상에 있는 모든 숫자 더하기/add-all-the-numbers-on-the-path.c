@@ -27,8 +27,8 @@ int main(void)
     int x = n / 2;
     int y = n / 2;
 
-    sum += map[y][x];
-    map[y][x] = 0;
+    //sum += map[y][x];
+    //map[y][x] = 0;
 
     for (int i = 0;i <= t;i++)
     {
