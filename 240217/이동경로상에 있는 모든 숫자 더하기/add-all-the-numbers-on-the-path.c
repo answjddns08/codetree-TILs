@@ -3,7 +3,7 @@
 int main(void)
 {
     int n,t;
-    char input[100001] = {0};
+    char input[100000] = {0};
     int map[100][100] = {0};
     int sum = 0;
     /**
@@ -40,7 +40,7 @@ int main(void)
         {
             dir = (dir + 1) % 4;
         }
-        else// F인 경우
+        else if (input[i] == 'F')
         {
             switch (dir)
             {
