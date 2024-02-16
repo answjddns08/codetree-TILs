@@ -3,8 +3,8 @@
 int main(void)
 {
     int n,t;
-    char input[100000] = {};
-    int map[99][99] = {};
+    char input[100000] = {0};
+    int map[99][99] = {0};
     int sum = 0;
     /**
      * 0은 북Y+
