@@ -71,7 +71,7 @@ int main(void)
             }
         }
 
-        printf("%d %d %d\n",y,x,dir);
+        //printf("%d %d %d\n",y,x,dir);
 
         sum += map[y][x];
         map[y][x] = 0;
