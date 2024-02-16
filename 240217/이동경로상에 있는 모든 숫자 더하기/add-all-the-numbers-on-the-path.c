@@ -30,7 +30,7 @@ int main(void)
     sum += map[y][x];
     map[y][x] = 0;
 
-    for (int i = 0;i <= t;i++)
+    for (int i = 0;i < t;i++)
     {
         if (input[i] == 'L')
         {
@@ -40,7 +40,7 @@ int main(void)
         {
             dir = (dir + 1) % 4;
         }
-        else if (input[i] == 'F')
+        else
         {
             switch (dir)
             {
@@ -51,13 +51,13 @@ int main(void)
                 }
                 break;
             case 1:
-                if (x < n)
+                if (x < n - 1)
                 {
                     x++;
                 }
                 break;
             case 2:
-                if (y < n)
+                if (y < n - 1)
                 {
                     y++;
                 }
@@ -70,6 +70,8 @@ int main(void)
                 break;
             }
         }
+
+        printf("%d %d %d\n",y,x,dir);
 
         sum += map[y][x];
         map[y][x] = 0;
