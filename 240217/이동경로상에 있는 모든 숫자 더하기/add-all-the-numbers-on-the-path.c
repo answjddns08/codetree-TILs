@@ -28,7 +28,6 @@ int main(void)
     int y = n / 2;
 
     sum += map[y][x];
-    map[y][x] = 0;
 
     for (int i = 0;i < t;i++)
     {
@@ -48,33 +47,35 @@ int main(void)
                 if (y > 0)
                 {
                     y--;
+                    sum += map[y][x];
                 }
                 break;
             case 1:
                 if (x < n - 1)
                 {
                     x++;
+                    sum += map[y][x];
                 }
                 break;
             case 2:
                 if (y < n - 1)
                 {
                     y++;
+                    sum += map[y][x];
                 }
                 break;
             case 3:
                 if (x > 0)
                 {
                     x--;
+                    sum += map[y][x];
                 }
                 break;
             }
         }
 
-        //printf("%d %d %d\n",y,x,dir);
+        //printf("%d %d %d %d\n",y,x,dir,sum);
 
-        sum += map[y][x];
-        map[y][x] = 0;
     }
 
     printf("%d",sum);
