@@ -3,14 +3,14 @@
 
 int main(void)
 {
-    int n[5] = {0};
+    int n;
     bool is3 = true;
 
     for (int i = 0;i < 5;i++)
     {
-        scanf("%d",&n[i]);
+        scanf("%d",&n);
         
-        if(n[i] % 3 != 0)
+        if(n % 3 != 0)
         {
             is3 = false;
             break;
