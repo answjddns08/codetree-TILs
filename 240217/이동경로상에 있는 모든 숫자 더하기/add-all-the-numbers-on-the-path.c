@@ -27,11 +27,11 @@ int main(void)
     int x = n / 2;
     int y = n / 2;
 
-    sum += map[y][x];
-    map[y][x] = 0;
-
     for (int i = 0;i <= t;i++)
     {
+        sum += map[y][x];
+        map[y][x] = 0;
+
         if (input[i] == 'L')
         {
             dir = dir == 0 ? 3 : (dir - 1);
@@ -70,12 +70,9 @@ int main(void)
                 break;
             }
         }
-
-        //printf("%c",input[i]);
-
-        sum += map[y][x];
-        map[y][x] = 0;
     }
+
+    sum += map[y][x];
 
     printf("%d",sum);
 
