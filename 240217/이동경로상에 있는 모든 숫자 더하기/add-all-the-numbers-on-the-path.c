@@ -3,8 +3,8 @@
 int main(void)
 {
     int n,t;
-    char input[100000] = {0};
-    int map[99][99] = {0};
+    char input[100001] = {0};
+    int map[100][100] = {0};
     int sum = 0;
     /**
      * 0은 북Y+
@@ -27,8 +27,8 @@ int main(void)
     int x = n / 2;
     int y = n / 2;
 
-    //sum += map[y][x];
-    //map[y][x] = 0;
+    sum += map[y][x];
+    map[y][x] = 0;
 
     for (int i = 0;i <= t;i++)
     {
