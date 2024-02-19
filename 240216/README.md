@@ -12,7 +12,7 @@
 
 |교재|이름|난이도|상태|최근 제출 코드|
 |---|---|:---:|:---:|---|
-|[Novice Mid / 시뮬레이션 II / dx dy technique](https://www.codetree.ai/missions?missionId=5)|[[테스트]이동경로상에 있는 모든 숫자 더하기](https://www.codetree.ai/missions/5/problems/add-all-the-numbers-on-the-path)|![보통][medium]|![Failed][failed]|[링크](https://github.com/answjddns08/codetree-TILs/blob/main/240216/%EC%9D%B4%EB%8F%99%EA%B2%BD%EB%A1%9C%EC%83%81%EC%97%90%20%EC%9E%88%EB%8A%94%20%EB%AA%A8%EB%93%A0%20%EC%88%AB%EC%9E%90%20%EB%8D%94%ED%95%98%EA%B8%B0/add-all-the-numbers-on-the-path.c)|
+|[Novice Mid / 시뮬레이션 II / dx dy technique](https://www.codetree.ai/missions?missionId=5)|[[테스트]이동경로상에 있는 모든 숫자 더하기](https://www.codetree.ai/missions/5/problems/add-all-the-numbers-on-the-path)|![보통][medium]|![Passed][passed]|[링크](https://github.com/answjddns08/codetree-TILs/blob/main/240216/%EC%9D%B4%EB%8F%99%EA%B2%BD%EB%A1%9C%EC%83%81%EC%97%90%20%EC%9E%88%EB%8A%94%20%EB%AA%A8%EB%93%A0%20%EC%88%AB%EC%9E%90%20%EB%8D%94%ED%95%98%EA%B8%B0/add-all-the-numbers-on-the-path.c)|
 
 
 * 획득 경험치: 해설을 보지 않고 푼 문제에 한해 최초 1회 경험치를 획득하실 수 있습니다.
