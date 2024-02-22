@@ -43,7 +43,7 @@ void Function(int y,int x,bool pre,int cnt)
             {
                 if (map[i][j] != pre)
                 {
-                    printf("%d %d %d\n",i,j,cnt);
+                    //printf("%d %d %d\n",i,j,cnt);
                     Function(i,j,map[i][j],cnt + 1);
                 }
             }
