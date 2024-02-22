@@ -22,7 +22,7 @@ int main(void)
 
     out:;
 
-    printf("%s\n",input);
+    //printf("%s\n",input);
 
     for (int i = 0;i < len;i++)
     {
