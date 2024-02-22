@@ -9,7 +9,7 @@ int main(void)
     scanf("%s",input);
     len = strlen(input);
 
-    for (int i = 0;i < len;i++)
+    for (int i = 0;i < len - 1;i++)
     {
         if (input[i] == '0')
         {
@@ -18,7 +18,7 @@ int main(void)
         }
     }
 
-    input[len - 1] = '0';
+    input[len - 1] = input[len - 1] == '0' ? '1' : '0';
 
     out:;
 
