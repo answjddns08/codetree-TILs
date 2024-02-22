@@ -28,7 +28,7 @@ int main(void)
     {
         output += 1 << (len - i - 1) * (input[i] - 48);
         
-        printf("%d\n",output);
+        //printf("%d\n",output);
 
         if (input[i] - 48 == 0)
         {
