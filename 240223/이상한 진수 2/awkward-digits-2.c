@@ -24,10 +24,15 @@ int main(void)
 
     for (int i = 0;i < len;i++)
     {
-        output += 1 << (len - i - 1) * (input[i] - 48);
+        output += 1 << (len - i - 1) * (input[i] - 48);\
+        
+        if (len - 1 == i && input[i] - 48 == 0)
+        {
+            output--;
+        }
     }
 
-    printf("%d\n",output - 1);
+    printf("%d",output);
 
     return 0;
 }
