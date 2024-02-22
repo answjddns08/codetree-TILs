@@ -14,13 +14,17 @@ int main(void)
         if (input[i] == '0')
         {
             input[i] = '1';
-            break;
+            goto out;
         }
     }
 
+    input[len - 1] = '0';
+
+    out:;
+
     for (int i = 0;i < len;i++)
     {
-        output += 1 << ((len - i) - 1) * (input[i] - 48);
+        output += 1 << (len - i - 1) * (input[i] - 48);
     }
 
     printf("%d\n",output - 1);
