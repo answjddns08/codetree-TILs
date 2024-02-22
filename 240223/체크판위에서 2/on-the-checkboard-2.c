@@ -31,8 +31,7 @@ int main(void)
 
 void Function(int y,int x,bool pre,int cnt)
 {
-
-    if (cnt == 3)
+    if (cnt == 3 && y == r - 1 && x == c - 1)
     {
         sum++;
     }
@@ -43,10 +42,10 @@ void Function(int y,int x,bool pre,int cnt)
             for (int j = x + 1;j < c;j++)
             {
                 if (map[i][j] != pre)
-                    {
-                        //printf("%d %d %d\n",i,j,cnt);
-                        Function(i,j,map[i][j],cnt + 1);
-                    }
+                {
+                    printf("%d %d %d\n",i,j,cnt);
+                    Function(i,j,map[i][j],cnt + 1);
+                }
             }
         }
     }
