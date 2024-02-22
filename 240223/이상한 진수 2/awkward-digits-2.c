@@ -22,11 +22,15 @@ int main(void)
 
     out:;
 
+    printf("%s\n",input);
+
     for (int i = 0;i < len;i++)
     {
-        output += 1 << (len - i - 1) * (input[i] - 48);\
+        output += 1 << (len - i - 1) * (input[i] - 48);
         
-        if (len - 1 == i && input[i] - 48 == 0)
+        printf("%d\n",output);
+
+        if (input[i] - 48 == 0)
         {
             output--;
         }
