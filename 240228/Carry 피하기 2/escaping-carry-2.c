@@ -57,6 +57,7 @@ int main(void)
                     {
                         temp += pow(10,l) * ((input[i][l] + input[j][l] + input[k][l]) % 48);
                     }
+                    //printf("%d\n",temp);
                     max = temp > max ? temp + 1 : max;
                 }
             }
@@ -70,12 +71,12 @@ int main(void)
 
 int comparing(int a,int b,int c)//세 개의 변수중 가장 큰 변수 반환
 {
-    if (a > b && a > c)//a가 가장크면 a반환
+    if (a >= b && a >= c)//a가 가장크면 a반환
     {
         return a;
     }
 
-    if (b > a && b > c)//b가 가장크면 b반환
+    if (b >= a && b >= c)//b가 가장크면 b반환
     {
         return b;
     }
