@@ -37,10 +37,10 @@ int main(void)
                             com += (temp == map[i + k][j]) ? 1 : 0;
                             break;
                         case 2://대각선(왼위 -> 오른아래)
-                            com += (temp == map[i + k][j + k]) ? 1 : 0;
+                            com += (temp == map[i + k][j - k]) ? 1 : 0;
                             break;
                         default://대각선(오른위 -> 왼아래)
-                            com += (temp == map[i - k][j - k]) ? 1 : 0;
+                            com += (temp == map[i - k][j + k]) ? 1 : 0;
                             break;
                         }
                     }
