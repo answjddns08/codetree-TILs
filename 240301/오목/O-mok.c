@@ -18,7 +18,7 @@ int main(void)
     {
         for (int j = 0;j < 19;j++)
         {
-            if (map[i][j] && (2 <= i && i <= 16) && (2 <= j && j <= 16))
+            if (map[i][j])
             {
                 int temp = map[i][j];
 
